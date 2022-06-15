@@ -85,6 +85,26 @@ function nombredelconejo(nombre) {
   
   nombredelconejo("Conejillo");
 
+    /*Array ejemplos de promesas es un objeto que representa la terminacióno fracaso esta
+  explicará cómo consumirlas*/
+
+  new Promise((resolver, rechazar) => {
+    console.log('Buena compra');
+
+    resolver();
+})
+.then(() => {
+    throw new Error('Venta no realizada');
+
+    console.log('No se hizo compra');
+})
+.catch(() => {
+    console.log('Venta exitosa');
+})
+.then(() => {
+    console.log('Excelente elección de grupo');
+})
+
 
 
 
