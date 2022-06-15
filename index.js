@@ -54,11 +54,15 @@ console.log(array1.reduce);
 
 /* Array findIndex devuelve el índice del primer elemento
 de un arraypara que cumpla función proporcionada*/
+/* Caso de uso saber cuales son los boletos más vendidos en  Ticketmaster
+*/
  
 const array1 = [15, 22, 80, 13, 6];
 
 const isLargeNumber = (element) => element > 13;
 
 console.log(array1.findIndex(isLargeNumber));
+
+
 
 
