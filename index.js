@@ -28,10 +28,28 @@ console.log(result);
 
 /* Array Find este regresa el valor del primer elemento que
  cumple la función*/
+/* Caso de uso saber cuales son los boletos más vendidos en  Ticketmaster
+*/
 
 const array1 = [21, 2, 9, 13, 4];
 
 const found = array1.find(element => element > 10);
 
 console.log(array1.find);
+
+/* Array reduce este ejecuta la funcón reductoraen cada 
+elemento.
+ */
+/* Caso de uso saber cuales son los boletos más vendidos en  Ticketmaster
+*/
+const array1 = [5, 7, 8, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
+console.log(array1.reduce);
+
 
