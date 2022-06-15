@@ -15,4 +15,23 @@ var roots = numbers.map(function(num) {
 });
 console.log(numbers.map);
 
+/* Array Filter este comprueba cada elemento donde cumple la condición 
+este acepta tres parámetros currentValue,index,array, thisArg*/
+/* Caso de uso saber cuales son los boletos más vendidos en  Ticketmaster
+*/
+
+const words = ['Rock&roll', 'Trova', 'pop', 'metal'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+
+/* Array Find este regresa el valor del primer elemento que
+ cumple la función*/
+
+const array1 = [21, 2, 9, 13, 4];
+
+const found = array1.find(element => element > 10);
+
+console.log(array1.find);
 
