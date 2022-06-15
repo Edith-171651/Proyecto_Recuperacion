@@ -63,6 +63,28 @@ const isLargeNumber = (element) => element > 13;
 
 console.log(array1.findIndex(isLargeNumber));
 
+/* Array replace devuelve una nueva cadena con algunas o todas las coincidencias de un patrón, siendo 
+cada una de estas coincidencias reemplazadas por remplazo.*/
+
+const p = 'My baby is very intelligent and her brother too?';
+
+console.log(p.replace('baby', 'brother'));
+
+
+const regex = /baby/i;
+
+console.log(p.replace(regex, 'Alison')); 
+
+/* Array hoisting es una manera general de referirse a cómo funcionan los contextos el cual puede
+ser un poco confunso al principio*/
+ 
+
+function nombredelconejo(nombre) {
+    console.log("El nombre del conejo " + nombre);
+  }
+  
+  nombredelconejo("Conejillo");
+
 
 
 
